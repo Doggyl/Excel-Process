@@ -64,7 +64,6 @@ class Individual(object):
             var_graph[i] = set(var_graph[i])
         return var_graph
 
-# print(Individual((2, 3, 4)).getGraph())
 
     def getCoord(self):
         var_coord = []
@@ -120,7 +119,7 @@ class Individual(object):
             return var_shell
 # print (Individual((2,3,4)).getShell("yz"))
 
-    def dominates(self, other, problem):
+    def getDominates(self, other, problem):
         var_dom = []
         if problem is "min":
             for i in self.values.keys():
@@ -152,3 +151,4 @@ class Individual(object):
     def getLength(self):
         return (len(self.chr))
 
+print(Individual((2,2,2)).getGraph())
