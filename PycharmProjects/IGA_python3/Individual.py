@@ -148,7 +148,7 @@ class Individual(object):
     def __getitem__(self, item):
         return self.chr[item]
 
-    def getLength(self):
+    def getLen(self):
         return (len(self.chr))
 
-print(Individual((2,2,2)).getGraph())
+# print(Individual((2,2,2)).getGraph())
